@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<style>
+
+    main {
+        text-align: center;
+        font-family: sans-serif;
+        background-color: yellow;
+    }
+  
+    h1 {
+        padding-top: 20px;
+        margin-bottom: -70px;
+  }
+
+    #form-contents {
+        background-color: white;
+        padding-top: 10px;
+        border-color: yellow;
+        border-width: 100px;
+        border-style: solid;
+        padding-bottom: 30px;
+      margin-right: 30px;
+      margin-left: 30px;
+    }
+
+  form {
+        text-align: left;
+        display: inline;
+    }
+  
+  #name {
+    margin-bottom: 20px;
+  }
+  
+  #name-label {
+    padding-right: 10px;
+    
+  }
+  
+  #email {
+    margin-bottom: 20px;
+  }
+  
+  #email-label {
+    padding-right: 8px;
+  }
+  
+  #number {
+    margin-bottom: 20px;
+  }
+  
+  #number-label {
+    padding-right: 22px;
+    margin-left: 13px;
+  }
+  
+  #role-dropdown {
+    text-align: center;
+    padding-bottom: 15px;
+    margin-top: 10px;
+  }
+  
+  #sadness-buttons {
+    text-align: center;
+  }
+  
+  #recommendations-buttons {
+    text-align: center;
+  }
+  
+  #improvements-boxes {
+    text-align: center;
+  }
+  
+  #comments {
+    height: 70px;
+    width: 500px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+</style>
+
+<main>
+<h1 id="title">Survey Form</h1>
+  
+
+<div id="form-contents">
+<p id="description"> Let us know how we can improve our app.</p>
+
+
+<form id="survey-form"> 
+
+<label for="name" id="name-label"> *Name: </label>
+<input id="name" name="name" type="text" class="input-field" placeholder="Enter Name" required><br>
+  
+<label for="email" id="email-label"> *E-mail: </label>
+<input id="email" name="email" type="email" class="input-field" placeholder="Enter Email" required><br>
+  
+<label for="age" id="number-label"> Age: </label>
+<input id="number" name="age" type="number" class="input-field" placeholder="Enter Age" min="1" max="115" style="width: 125px;"><br>
+
+<label for="role"> Which option best describes you?</label><br>
+  <div id="role-dropdown" class="table">
+<select id="dropdown" class="dropdown">
+<option disabled value> Select an option</option>
+<option value="student"> Student </option>
+<option value="professional"> Professional </option>
+<option value="withhold-response"> Prefer not to say </option>
+<option value="other"> Other </option><br>
+</select>
+  </div>
+
+<label for "sadness">How sad would you be if our app no longer existed?</label><br>
+<div id="sadness-buttons" class="table">
+<ul style="list-style: none;">
+    <li class="radio"><label><input type="radio" name="sadness" value="1"> 1 </label></li>
+    <li class="radio"><label><input type="radio" name="sadness" value="2"> 2 </label></li>
+    <li class="radio"><label><input type="radio" name="sadness" value="3"> 3 </label></li>
+    <li class="radio"><label><input type="radio" name="sadness" value="4"> 4 </label></li>
+    <li class="radio"><label><input type="radio" name="sadness" value="5"> 5 </label></li>
+    <li class="radio"><label><input type="radio" name="sadness" value="6"> 6 </label></li>
+    <li class="radio"><label><input type="radio" name="sadness" value="7"> 7 </label></li>
+    <li class="radio"><label><input type="radio" name="sadness" value="8"> 8 </label></li>
+    <li class="radio"><label><input type="radio" name="sadness" value="9"> 9 </label></li>
+    <li class="radio"><label><input type="radio" name="sadness" value="10"> 10 </label><br>
+</ul>
+  </div>
+
+
+<label for="recommendations">How likely are you to recommend our app to a friend:</label><br>
+<div id="recommendations-buttons" class="table">
+<ul style="list-style: none;">
+    <li class="radio"><label><input type="radio" name="recommendations" value="1"> 1 </label></li>
+    <li class="radio"><label><input type="radio" name="recommendations" value="2"> 2 </label></li>
+    <li class="radio"><label><input type="radio" name="recommendations" value="3"> 3 </label></li>
+    <li class="radio"><label><input type="radio" name="recommendations" value="4"> 4 </label></li>
+    <li class="radio"><label><input type="radio" name="recommendations" value="5"> 5 </label></li>
+    <li class="radio"><label><input type="radio" name="recommendations" value="6"> 6 </label></li>
+    <li class="radio"><label><input type="radio" name="recommendations" value="7"> 7 </label></li>
+    <li class="radio"><label><input type="radio" name="recommendations" value="8"> 8 </label></li>
+    <li class="radio"><label><input type="radio" name="recommendations" value="9"> 9 </label></li>
+    <li class="radio"><label><input type="radio" name="recommendations" value="10"> 10 </label></li><br>
+</ul>
+  </div>
+
+<label for="improvements"> What would you like to see us improve in our app (check all that apply):</label><br>
+  <div id="improvements-boxes" class="table">
+<ul id="improvements" style="list-style: none;">
+  <li><label><input type="checkbox" name="improve" value="features"> Features </label></li>
+  <li><label><input type="checkbox" name="improve" value="design"> Design </label></li>
+  <li><label><input type="checkbox" name="improve" value="notifications"> Notifications </label></li>
+  <li><label><input type="checkbox" name="improve" value="performance"> Performance </label></li>
+  <li><label><input type="checkbox" name="improve" value="privacy"> Privacy </label></li>
+  <li><label><input type="checkbox" name="improve" value="support"> Support </label></li><br>
+</ul>
+  </div>
+
+<label for="comments">Any comments or suggestions?</label><br>
+<textarea id="comments" placeholder="Enter your comment here..."></textarea><br>
+
+<button id="submit" type="submit">Submit</button>
+
+</form>
+
+</div> 
+  
+</main>
+</html>
